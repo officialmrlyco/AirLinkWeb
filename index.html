@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#050505" />
+    <meta name="description" content="AirLink is an Android airtime desk for receiving M-PESA payments, managing clients, and queueing airtime execution." />
+    <title>AirLink - Your airtime desk</title>
+    <link rel="icon" href="assets/brand/airlink-logo.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- The site stays intentionally calm: navigation only anchors the product story. -->
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="AirLink home"><img src="assets/brand/airlink-logo.png" alt="" /><span>AirLink</span></a>
+      <nav aria-label="Primary navigation"><a href="#how-it-works">How it works</a><a href="#screens">Screens</a><a href="#safety">Safety</a></nav>
+      <a class="nav-download" data-download-link href="#download">Download</a>
+    </header>
+    <main id="top">
+      <!-- Hero copy explains the outcome before the supporting details below. -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Android airtime operations</p>
+          <h1 id="hero-title">Your airtime desk,<br />kept in one place.</h1>
+          <p class="hero-lede">AirLink turns authorised M-PESA payment confirmations into clear airtime work: identify the client, calculate the airtime, and execute one protected carrier request at a time.</p>
+          <div class="hero-actions"><a class="button button-primary" data-download-link href="#download">Download latest update <span aria-hidden="true">↓</span></a><a class="button button-quiet" href="#how-it-works">See how it works</a></div>
+          <p class="fine-print">Android only. You control every merchant setting on your phone.</p>
+        </div>
+        <!-- A product-shaped panel reinforces the phone-first workflow without fake metrics. -->
+        <div class="hero-panel" aria-label="AirLink workflow overview">
+          <div class="panel-topline"><span class="status-dot"></span> Automation ready</div>
+          <div class="panel-title">A clear queue<br />for every payment.</div>
+          <ol class="workflow-list">
+            <li><span>01</span><strong>Payment received</strong><em>M-PESA confirmation is matched to the client.</em></li>
+            <li><span>02</span><strong>Airtime calculated</strong><em>Your saved rate and execution split are applied.</em></li>
+            <li><span>03</span><strong>Execution queued</strong><em>One carrier request completes before the next begins.</em></li>
+          </ol>
+        </div>
+      </section>
+      <section class="principles" aria-label="What AirLink keeps visible">
+        <article><span>01</span><h2>Payment to action</h2><p>Use Till-to-Till or Number-to-Till confirmations to create an organised transaction record.</p></article>
+        <article><span>02</span><h2>One reliable lane</h2><p>Carrier requests stay serialised, so a busy inbox does not turn into overlapping USSD sessions.</p></article>
+        <article><span>03</span><h2>Merchant control</h2><p>Review, retry, hold, mark done, or correct eligible transactions from their details.</p></article>
+      </section>
+      <section class="story-section" id="how-it-works" aria-labelledby="workflow-title">
+        <div class="section-heading"><p class="eyebrow">A deliberate workflow</p><h2 id="workflow-title">Built around the way an airtime desk actually works.</h2></div>
+        <div class="feature-grid">
+          <article class="feature feature-large"><span class="feature-number">01</span><h3>Know who every payment belongs to.</h3><p>Keep Till and Number clients separate, store the right execution destination, and use an optional two- or three-way percentage split that always adds up to 100%.</p></article>
+          <article class="feature"><span class="feature-number">02</span><h3>See the whole transaction.</h3><p>Each execution has its own durable run record, so completed airtime is never sent again during a retry.</p></article>
+          <article class="feature"><span class="feature-number">03</span><h3>Keep automation intentional.</h3><p>Automation requires a deliberate hold to change state. When it is off, new work stays held until you choose to retry it.</p></article>
+          <article class="feature feature-wide"><span class="feature-number">04</span><h3>Work with the phone, not around it.</h3><p>AirLink runs the execution queue natively on the Android device, uses your selected SIM and USSD settings, and shows the active transaction from the persistent automation notification.</p></article>
+        </div>
+      </section>
+      <section class="screens-section" id="screens" aria-labelledby="screens-title">
+        <div class="section-heading split-heading"><div><p class="eyebrow">Inside AirLink</p><h2 id="screens-title">The details stay readable when the desk gets busy.</h2></div><p>Every screen is designed around a quick decision: what arrived, what will run, and what needs your attention.</p></div>
+        <div class="screen-grid">
+          <figure class="screen-card screen-card-primary"><img src="assets/screenshots/dashboard.png" alt="AirLink dashboard showing the airtime desk and automation status" /><figcaption><span>01</span><strong>Dashboard</strong><p>Float, available runs, today’s activity, automation state, and recent transactions.</p></figcaption></figure>
+          <figure class="screen-card"><div class="screen-placeholder" role="img" aria-label="AirLink settings preview"><span class="phone-label">AirLink</span><b>Settings</b><i>Rates, SIM, USSD, automation, and permissions in one place.</i></div><figcaption><span>02</span><strong>Settings</strong><p>Configure the desk around your current rate, SIM choice, units, and execution method.</p></figcaption></figure>
+          <figure class="screen-card"><div class="screen-placeholder statistics" role="img" aria-label="AirLink statistics preview"><span class="phone-label">AirLink</span><b>Statistics</b><i>Today first: a focused view of completed, failed, pending, and received value.</i></div><figcaption><span>03</span><strong>Statistics</strong><p>Start on today, then understand how the desk is moving over time.</p></figcaption></figure>
+        </div>
+      </section>
+      <section class="safety-section" id="safety" aria-labelledby="safety-title">
+        <div class="safety-copy"><p class="eyebrow">A safer working rhythm</p><h2 id="safety-title">Automation should be visible, recoverable, and under your control.</h2></div>
+        <dl class="safety-list">
+          <div><dt>Duplicate guard</dt><dd>An M-PESA receipt is claimed once before it can change a client or create an execution plan.</dd></div>
+          <div><dt>Requirement holds</dt><dd>If Accessibility or units are unavailable, affected transactions remain held until you decide to queue them again.</dd></div>
+          <div><dt>Private client backup</dt><dd>Export client profiles into a protected AirLink file that keeps transaction history and sensitive settings out.</dd></div>
+          <div><dt>Clear recovery</dt><dd>Retries preserve completed airtime and only work on the unfinished execution legs.</dd></div>
+        </dl>
+      </section>
+      <section class="download-section" id="download" aria-labelledby="download-title"><p class="eyebrow">Get started</p><h2 id="download-title">Keep your airtime desk close.</h2><p>Download the latest AirLink Android update from the official release.</p><a class="button button-primary button-large" data-download-link href="#">Download latest update <span aria-hidden="true">↓</span></a><p class="release-note">The link opens the official GitHub release. Android may ask for your permission before installing an update.</p></section>
+    </main>
+    <footer><a class="brand" href="#top" aria-label="Back to top"><img src="assets/brand/airlink-logo.png" alt="" /><span>AirLink</span></a><p>© <span id="year"></span> BingwaFlash</p></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
