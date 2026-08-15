@@ -4,8 +4,8 @@
    airtime run. Every recurring surface borrows from that idea:
    a ticket/receipt register — dotted leaders, torn edges, a
    verification seal, clause-lettered rules — rendered in a
-   warm, restrained monochrome so the paper metaphor never tips
-   into decoration. Colour is spent once, on the seal.
+   warm, restrained monochrome — no colour anywhere, so the paper
+   metaphor never tips into decoration.
    ============================================================ */
 
 :root {
@@ -19,8 +19,8 @@
   --soft: #d8d4c8;
   --muted: #9a968c;
   --faint: #6f6b60;
-  --brass: #bd9761;
-  --brass-dim: rgba(189, 151, 97, 0.4);
+  --brass: #f2efe6;
+  --brass-dim: rgba(246, 243, 236, 0.32);
   --paper: #eee8db;
   --paper-ink: #17140f;
   --paper-muted: #5c5749;
