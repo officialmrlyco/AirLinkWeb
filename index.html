@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#050505" />
+    <meta name="theme-color" content="#0a0908" />
     <!-- Search and sharing metadata uses the same clear product name as the browser tab. -->
     <meta name="description" content="AirLink is an Android airtime selling automation app for receiving authorised M-PESA payments, managing clients, and queueing airtime execution." />
     <meta name="application-name" content="AirLink" />
@@ -20,8 +20,12 @@
     <!-- The square, high-contrast SVG is intentional: transparent black artwork disappears in dark browser tabs. -->
     <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml" sizes="any" />
     <link rel="icon" href="assets/brand/airlink-logo.png" type="image/png" />
+    <!-- Two display roles (serif for headlines, mono for ledger data) plus a plain body face. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,680;1,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
     <!-- Versioned asset reference refreshes the static stylesheet after a Pages deploy. -->
-    <link rel="stylesheet" href="styles.css?v=responsive-1" />
+    <link rel="stylesheet" href="styles.css?v=ledger-2" />
   </head>
   <body>
     <!-- The site stays intentionally calm: navigation only anchors the product story. -->
@@ -41,52 +45,76 @@
           <div class="hero-actions"><a class="button button-primary" data-download-link href="#download">Download latest update <span aria-hidden="true">↓</span></a><a class="button button-quiet" href="#how-it-works">See how it works</a></div>
           <p class="fine-print">Android only. You control every merchant setting on your phone.</p>
         </div>
-        <!-- A product-shaped panel reinforces the phone-first workflow without fake metrics. -->
-        <div class="hero-panel" aria-label="AirLink workflow overview">
-          <div class="panel-topline"><span class="status-dot"></span> Automation ready</div>
-          <div class="panel-title">A clear queue<br />for every payment.</div>
-          <ol class="workflow-list">
-            <li><span>01</span><strong>Payment received</strong><em>M-PESA confirmation is matched to the client.</em></li>
-            <li><span>02</span><strong>Airtime calculated</strong><em>Your saved rate and execution split are applied.</em></li>
-            <li><span>03</span><strong>Execution queued</strong><em>One carrier request completes before the next begins.</em></li>
-          </ol>
+        <!-- Signature element: the workflow is presented as a printed automation
+             log, echoing the M-PESA receipts the app itself is built around. -->
+        <div class="ticket" aria-label="AirLink workflow overview">
+          <div class="ticket-body">
+            <div class="ticket-head">
+              <span>Automation log</span>
+              <span class="ticket-seal"><span class="ring" aria-hidden="true"></span>Verified</span>
+            </div>
+            <p class="ticket-title">A clear queue<br />for every payment.</p>
+            <ol class="ticket-rows">
+              <li class="ticket-row"><span class="idx">01</span><strong>Payment received</strong><span>M-PESA confirmation is matched to the client.</span></li>
+              <li class="ticket-row"><span class="idx">02</span><strong>Airtime calculated</strong><span>Your saved rate and execution split are applied.</span></li>
+              <li class="ticket-row"><span class="idx">03</span><strong>Execution queued</strong><span>One carrier request completes before the next begins.</span></li>
+            </ol>
+          </div>
+          <div class="ticket-tear" aria-hidden="true"></div>
+          <p class="ticket-foot">AirLink · Android · On-device automation</p>
         </div>
       </section>
-      <section class="principles" aria-label="What AirLink keeps visible">
-        <article><span>01</span><h2>Payment to action</h2><p>Use Till-to-Till or Number-to-Till confirmations to create an organised transaction record.</p></article>
-        <article><span>02</span><h2>One reliable lane</h2><p>Carrier requests stay serialised, so a busy inbox does not turn into overlapping USSD sessions.</p></article>
-        <article><span>03</span><h2>Merchant control</h2><p>Review, retry, hold, mark done, or correct eligible transactions from their details.</p></article>
+      <section class="principles reveal" aria-label="What AirLink keeps visible">
+        <article><span class="tag">Payments</span><h2>Payment to action</h2><p>Use Till-to-Till or Number-to-Till confirmations to create an organised transaction record.</p></article>
+        <article><span class="tag">Queue</span><h2>One reliable lane</h2><p>Carrier requests stay serialised, so a busy inbox does not turn into overlapping USSD sessions.</p></article>
+        <article><span class="tag">Control</span><h2>Merchant control</h2><p>Review, retry, hold, mark done, or correct eligible transactions from their details.</p></article>
       </section>
       <section class="story-section" id="how-it-works" aria-labelledby="workflow-title">
-        <div class="section-heading"><p class="eyebrow">A deliberate workflow</p><h2 id="workflow-title">Built around the way an airtime desk actually works.</h2></div>
+        <div class="section-heading reveal"><p class="eyebrow">A deliberate workflow</p><h2 id="workflow-title">Built around the way an airtime desk actually works.</h2></div>
         <div class="feature-grid">
-          <article class="feature feature-large"><span class="feature-number">01</span><h3>Know who every payment belongs to.</h3><p>Keep Till and Number clients separate, store the right execution destination, and use an optional two- or three-way percentage split that always adds up to 100%.</p></article>
-          <article class="feature"><span class="feature-number">02</span><h3>See the whole transaction.</h3><p>Each execution has its own durable run record, so completed airtime is never sent again during a retry.</p></article>
-          <article class="feature"><span class="feature-number">03</span><h3>Keep automation intentional.</h3><p>Automation requires a deliberate hold to change state. When it is off, new work stays held until you choose to retry it.</p></article>
-          <article class="feature feature-wide"><span class="feature-number">04</span><h3>Work with the phone, not around it.</h3><p>AirLink runs the execution queue natively on the Android device, uses your selected SIM and USSD settings, and shows the active transaction from the persistent automation notification.</p></article>
+          <article class="feature feature-large reveal"><span class="tag">Clients</span><h3>Know who every payment belongs to.</h3><p>Keep Till and Number clients separate, store the right execution destination, and use an optional two- or three-way percentage split that always adds up to 100%.</p></article>
+          <article class="feature reveal"><span class="tag">Run log</span><h3>See the whole transaction.</h3><p>Each execution has its own durable run record, so completed airtime is never sent again during a retry.</p></article>
+          <article class="feature reveal"><span class="tag">Automation</span><h3>Keep automation intentional.</h3><p>Automation requires a deliberate hold to change state. When it is off, new work stays held until you choose to retry it.</p></article>
+          <article class="feature feature-wide reveal"><span class="tag">On-device</span><h3>Work with the phone, not around it.</h3><p>AirLink runs the execution queue natively on the Android device, uses your selected SIM and USSD settings, and shows the active transaction from the persistent automation notification.</p></article>
         </div>
       </section>
       <section class="screens-section" id="screens" aria-labelledby="screens-title">
-        <div class="section-heading split-heading"><div><p class="eyebrow">Inside AirLink</p><h2 id="screens-title">The details stay readable when the desk gets busy.</h2></div><p>Every screen is designed around a quick decision: what arrived, what will run, and what needs your attention.</p></div>
+        <div class="section-heading split-heading reveal"><div><p class="eyebrow">Inside AirLink</p><h2 id="screens-title">The details stay readable when the desk gets busy.</h2></div><p>Every screen is designed around a quick decision: what arrived, what will run, and what needs your attention.</p></div>
         <div class="screen-grid">
-          <figure class="screen-card screen-card-primary"><img src="assets/screenshots/dashboard.jpg" alt="AirLink dashboard showing the airtime desk and automation status" /><figcaption><span>01</span><strong>Dashboard</strong><p>Float, available runs, today’s activity, automation state, and recent transactions.</p></figcaption></figure>
+          <figure class="screen-card screen-card-primary reveal"><div class="screen-frame"><img src="assets/screenshots/dashboard.jpg" alt="AirLink dashboard showing the airtime desk and automation status" /></div><figcaption><span class="num">No. 01</span><strong>Dashboard</strong><p>Float, available runs, today’s activity, automation state, and recent transactions.</p></figcaption></figure>
           <!-- These supplied product captures are kept as separate assets for crisp responsive crops. -->
-          <figure class="screen-card"><img src="assets/screenshots/settings.jpg" alt="AirLink settings screen" /><figcaption><span>02</span><strong>Settings</strong><p>Configure the desk around your current rate, SIM choice, units, and execution method.</p></figcaption></figure>
-          <figure class="screen-card"><img src="assets/screenshots/statistics.jpg" alt="AirLink statistics screen" /><figcaption><span>03</span><strong>Statistics</strong><p>Start on today, then understand how the desk is moving over time.</p></figcaption></figure>
+          <figure class="screen-card reveal"><div class="screen-frame"><img src="assets/screenshots/settings.jpg" alt="AirLink settings screen" /></div><figcaption><span class="num">No. 02</span><strong>Settings</strong><p>Configure the desk around your current rate, SIM choice, units, and execution method.</p></figcaption></figure>
+          <figure class="screen-card reveal"><div class="screen-frame"><img src="assets/screenshots/statistics.jpg" alt="AirLink statistics screen" /></div><figcaption><span class="num">No. 03</span><strong>Statistics</strong><p>Start on today, then understand how the desk is moving over time.</p></figcaption></figure>
         </div>
       </section>
       <section class="safety-section" id="safety" aria-labelledby="safety-title">
-        <div class="safety-copy"><p class="eyebrow">A safer working rhythm</p><h2 id="safety-title">Automation should be visible, recoverable, and under your control.</h2></div>
-        <dl class="safety-list">
+        <div class="safety-copy reveal"><p class="eyebrow">A safer working rhythm</p><h2 id="safety-title">Automation should be visible, recoverable, and under your control.</h2></div>
+        <dl class="safety-list reveal">
           <div><dt>Duplicate guard</dt><dd>An M-PESA receipt is claimed once before it can change a client or create an execution plan.</dd></div>
           <div><dt>Requirement holds</dt><dd>If Accessibility or units are unavailable, affected transactions remain held until you decide to queue them again.</dd></div>
           <div><dt>Private client backup</dt><dd>Export client profiles into a protected AirLink file that keeps transaction history and sensitive settings out.</dd></div>
           <div><dt>Clear recovery</dt><dd>Retries preserve completed airtime and only work on the unfinished execution legs.</dd></div>
         </dl>
       </section>
-      <section class="download-section" id="download" aria-labelledby="download-title"><p class="eyebrow">Get started</p><h2 id="download-title">Keep your airtime desk close.</h2><p>Download the latest AirLink Android update from the official release.</p><a class="button button-primary button-large" data-download-link href="#">Download latest update <span aria-hidden="true">↓</span></a></section>
+      <section class="download-section reveal" id="download" aria-labelledby="download-title">
+        <div class="download-copy">
+          <p class="eyebrow">Get started</p>
+          <h2 id="download-title">Keep your airtime desk close.</h2>
+          <p>Download the latest AirLink Android update from the official release.</p>
+          <div class="ticket-meta"><span>Platform — Android</span><span>Distribution — Direct APK</span></div>
+        </div>
+        <div class="download-stub">
+          <a class="button button-primary button-large" data-download-link href="#">Download <span aria-hidden="true">↓</span></a>
+        </div>
+      </section>
     </main>
-    <footer><a class="brand" href="#top" aria-label="Back to top"><img src="assets/brand/airlink-logo.png" alt="" /><span>AirLink</span></a><p>© <span id="year"></span> BingwaFlash</p></footer>
+    <footer>
+      <a class="brand" href="#top" aria-label="Back to top"><img src="assets/brand/airlink-logo.png" alt="" /><span>AirLink</span></a>
+      <div class="foot-meta">
+        <p>© <span id="year"></span> BingwaFlash</p>
+        <p class="log-line">— end of log —</p>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
