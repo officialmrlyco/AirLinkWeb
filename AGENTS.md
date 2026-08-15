@@ -13,6 +13,6 @@
 
 ## Delivery
 
-- GitHub Pages configuration: branch `main`, folder `/ (root)`, custom domain `airlink.co.ke`, HTTPS enforced after DNS verifies.
-- Cloudflare remains the DNS provider. Keep GitHub Pages origin records DNS-only during verification so certificate provisioning is reliable.
+- GitHub Pages configuration: branch `main`, folder `/ (root)`, custom domain `airlink.co.ke`. It serves HTTP immediately; enable HTTPS only after GitHub has provisioned the certificate.
+- Cloudflare remains the DNS provider. On 2026-08-15 the zone received DNS-only A records for `@` at `185.199.108.153`, `.109.153`, `.110.153`, and `.111.153`, plus DNS-only `www` CNAME to `officialmrlyco.github.io`. Keep these GitHub Pages origin records DNS-only while certificate provisioning is in progress.
 - This has no build step. Validate `index.html` locally and test desktop plus mobile layouts before publishing.
