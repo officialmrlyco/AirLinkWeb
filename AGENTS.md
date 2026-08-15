@@ -8,6 +8,7 @@
 
 - Keep the public site factual: AirLink is an Android airtime merchant tool that reads authorised M-PESA confirmations and queues carrier airtime execution on the merchant's phone.
 - The visual language is black and white. Use the transparent black AirLink mark inverted with CSS on the black background; do not add a coloured logo background.
+- Browser and search identity must use the title `AirLink - Airtime Selling Automation App`. Keep the SVG favicon high-contrast and self-contained because the transparent black in-app logo disappears against dark browser chrome.
 - Supplied public product captures from `C:\AirLinkScreenshots` are stored as `assets/screenshots/dashboard.jpg`, `settings.jpg`, and `statistics.jpg`, labelled Dashboard, Settings, and Statistics in `index.html`. Do not use customer or payment data in future public images.
 - `DOWNLOAD_URL` in `script.js` is the only release-link setting. Upload an APK asset named `AirLink.apk` to the latest public `AirLinkWeb` GitHub Release, or replace the URL with the desired release URL. Never host signing keys, Firebase files, raw SMS, or merchant backups here.
 

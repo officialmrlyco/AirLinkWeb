@@ -1,0 +1,6 @@
+<!-- A high-contrast, self-contained mark stays legible in browser tabs and search results. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="AirLink">
+  <rect width="64" height="64" rx="15" fill="#ffffff"/>
+  <path fill="#050505" d="M12 49 28.5 14.5c.8-1.8 3.3-1.9 4.3-.1l5.3 9.6h-8l-11 25h-7.1Zm18.8 0 16.6-29.2c.6-1.1 1.8-1.8 3.1-1.8H53v7.3h-1.4L39 49h-8.2Z"/>
+  <path fill="#050505" d="M25.6 39h15.8l-3.7 6.5H22.4l3.2-6.5Z"/>
+</svg>
