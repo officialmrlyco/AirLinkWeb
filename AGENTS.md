@@ -16,3 +16,4 @@
 - GitHub Pages configuration: branch `main`, folder `/ (root)`, custom domain `airlink.co.ke`. It serves HTTP immediately; enable HTTPS only after GitHub has provisioned the certificate.
 - Cloudflare remains the DNS provider. On 2026-08-15 the zone received DNS-only A records for `@` at `185.199.108.153`, `.109.153`, `.110.153`, and `.111.153`, plus DNS-only `www` CNAME to `officialmrlyco.github.io`. Keep these GitHub Pages origin records DNS-only while certificate provisioning is in progress.
 - This has no build step. Validate `index.html` locally and test desktop plus mobile layouts before publishing.
+- Responsive layout rule: at laptop widths (801-1100px), keep the hero balanced and show all three product captures together. On phones, preserve the full 1080x2436 captures in an 82vw horizontal snap rail instead of cropping them or stacking an overly long page. Confirm that neither breakpoint introduces document-level horizontal overflow.
