@@ -1,5 +1,6 @@
-// Update only this URL after publishing a GitHub Release with AirLink.apk.
-const DOWNLOAD_URL = 'https://github.com/officialmrlyco/AirLinkWeb/releases/latest/download/AirLink.apk';
+// This tag-specific asset URL is permanent for the published release. Never
+// point the public installer at the mutable "latest" redirect or a branch file.
+const DOWNLOAD_URL = 'https://github.com/officialmrlyco/AirLinkWeb/releases/download/v1.0.2/AirLink.apk';
 
 // One source of truth keeps every download call-to-action on the same release.
 document.querySelectorAll('[data-download-link]').forEach((link) => {

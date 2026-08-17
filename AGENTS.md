@@ -18,3 +18,8 @@
 - Cloudflare remains the DNS provider. On 2026-08-15 the zone received DNS-only A records for `@` at `185.199.108.153`, `.109.153`, `.110.153`, and `.111.153`, plus DNS-only `www` CNAME to `officialmrlyco.github.io`. Keep these GitHub Pages origin records DNS-only while certificate provisioning is in progress.
 - This has no build step. Validate `index.html` locally and test desktop plus mobile layouts before publishing.
 - Responsive layout rule: at laptop widths (801-1100px), keep the hero balanced and show all three product captures together. On phones, preserve the full 1080x2436 captures in an 82vw horizontal snap rail instead of cropping them or stacking an overly long page. Confirm that neither breakpoint introduces document-level horizontal overflow.
+
+## Public release record (2026-08-17)
+
+- The initial public APK release is `v1.0.2` / version code `2`, published on 17 August 2026 as the signed `AirLink.apk` GitHub Release asset. It is 85.2 MB and requires Android 7.0 (API 24) or later.
+- `script.js` must use the tag-specific `releases/download/v1.0.2/AirLink.apk` URL, never the mutable `releases/latest` redirect or a branch-hosted APK. Keep the release record in `index.html` aligned with the published version, date, minimum Android version, size, and user-facing What's included list.
