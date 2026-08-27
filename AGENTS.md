@@ -10,7 +10,7 @@
 - The visual language is black and white. Use the transparent black AirLink mark inverted with CSS on the black background; do not add a coloured logo background.
 - Browser and search identity must use the title `AirLink - Airtime Selling Automation App`. Keep the SVG favicon high-contrast and self-contained because the transparent black in-app logo disappears against dark browser chrome.
 - Supplied public product captures from `C:\AirLinkScreenshots` are stored as `assets/screenshots/dashboard.jpg`, `settings.jpg`, and `statistics.jpg`, labelled Dashboard, Settings, and Statistics in `index.html`. Do not use customer or payment data in future public images.
-- `DOWNLOAD_URL` in `script.js` is the only release-link setting. Upload an APK asset named `AirLink.apk` to the latest public `AirLinkWeb` GitHub Release, or replace the URL with the desired release URL. Never host signing keys, Firebase files, raw SMS, or merchant backups here.
+- `DOWNLOAD_URL` in `script.js` is the only release-link setting. Keep it on the selected tag-specific GitHub Release asset rather than the mutable `latest` redirect or a branch file. Never host signing keys, Firebase files, raw SMS, or merchant backups here.
 
 ## Delivery
 
@@ -22,4 +22,11 @@
 ## Public release record (2026-08-17)
 
 - The initial public APK release is `v1.0.2` / version code `2`, published on 17 August 2026 as the signed `AirLink.apk` GitHub Release asset. It is 85.2 MB and requires Android 7.0 (API 24) or later.
-- `script.js` must use the tag-specific `releases/download/v1.0.2/AirLink.apk` URL, never the mutable `releases/latest` redirect or a branch-hosted APK. Keep the release record in `index.html` aligned with the published version, date, minimum Android version, size, and user-facing What's included list.
+- The original website used the tag-specific `releases/download/v1.0.2/AirLink.apk` URL. Retain that fact as history, but keep the active website record and link aligned with the newer selected release below.
+
+## Mutable v1.0.2 recovery release (2026-08-27)
+
+- Keep the immutable initial `v1.0.2` release intact. The current recovery APK is visible version `1.0.2`, Android version code `3`, and is published separately under tag `v1.0.2-fix1` as `Airlink_v1.0.2.apk`.
+- Repository-level immutable releases are disabled so `v1.0.2-fix1` can be updated. Preserve its exact tag and asset filename when replacing the APK; this keeps the tag-specific website URL stable without using the ambiguous `latest` redirect.
+- The verified recovery APK is 89,325,193 bytes (85.2 MiB), requires Android 7.0 (API 24) or later, uses APK Signature Scheme v2, and has SHA-256 `DEC067EEB0D47FC0E5321BA3675FB2FC0E47317FCDE04B2361D76E5A17A96C20`.
+- The public release record must show the 27 August 2026 recovery date, build 3, stale-execution recovery, merchant-action restoration, safe Accessibility expiry, and the retained product feature list.

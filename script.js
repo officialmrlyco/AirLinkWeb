@@ -1,6 +1,6 @@
-// This tag-specific asset URL is permanent for the published release. Never
-// point the public installer at the mutable "latest" redirect or a branch file.
-const DOWNLOAD_URL = 'https://github.com/officialmrlyco/AirLinkWeb/releases/download/v1.0.2/AirLink.apk';
+// The recovery release stays updateable, while its tag-specific asset URL
+// remains stable as long as future replacements keep the same filename.
+const DOWNLOAD_URL = 'https://github.com/officialmrlyco/AirLinkWeb/releases/download/v1.0.2-fix1/Airlink_v1.0.2.apk';
 
 // One source of truth keeps every download call-to-action on the same release.
 document.querySelectorAll('[data-download-link]').forEach((link) => {
