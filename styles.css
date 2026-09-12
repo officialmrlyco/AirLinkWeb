@@ -407,6 +407,10 @@ footer {
 footer .brand span { color: var(--soft); }
 footer .foot-meta { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
 footer p { margin: 0; }
+/* Parent-company link retains AirLink's understated monochrome footer language. */
+footer .credit-line { font-size: 0.72rem; color: var(--faint); }
+footer .credit-line a { color: var(--soft); font-weight: 700; text-underline-offset: 3px; }
+footer .credit-line a:hover, footer .credit-line a:focus-visible { color: var(--text); }
 footer .log-line { font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.08em; color: var(--faint); font-style: italic; }
 
 /* ---------------- scroll reveal (progressive; see script.js) ---------------- */

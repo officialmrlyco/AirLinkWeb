@@ -1,5 +1,10 @@
 # AirLinkWeb
 
+## LYCO TECHNOLOGIES product ownership (2026-09-12)
+
+- AirLink is owned and designed by LYCO TECHNOLOGIES. Its public footer has an exact `Made and designed by LYCO TECHNOLOGIES` link to `https://lycotechnologies.co.ke/`.
+- Keep that company attribution understated and separate from merchant-facing product claims; AirLink remains the visible product identity.
+
 ## Purpose
 
 `AirLinkWeb` is the public static product site for AirLink. GitHub Pages serves the `main` branch root, and the `CNAME` file binds the published site to `airlink.co.ke`.
