@@ -33,5 +33,5 @@
 
 - Keep the immutable initial `v1.0.2` release intact. The current recovery APK is visible version `1.0.2`, Android version code `3`, and is published separately under tag `v1.0.2-fix1` as `Airlink_v1.0.2.apk`.
 - Repository-level immutable releases are disabled so `v1.0.2-fix1` can be updated. Preserve its exact tag and asset filename when replacing the APK; this keeps the tag-specific website URL stable without using the ambiguous `latest` redirect.
-- The verified recovery APK is 89,325,193 bytes (85.2 MiB), requires Android 7.0 (API 24) or later, uses APK Signature Scheme v2, and has SHA-256 `DEC067EEB0D47FC0E5321BA3675FB2FC0E47317FCDE04B2361D76E5A17A96C20`.
-- The public release record must show the 27 August 2026 recovery date, build 3, stale-execution recovery, merchant-action restoration, safe Accessibility expiry, and the retained product feature list.
+- The verified refreshed APK is 89,358,057 bytes (85.2 MiB), requires Android 7.0 (API 24) or later, uses APK Signature Scheme v2, and has SHA-256 `ACA22F5A644B87D748CA1D117F31790EED79D47491B264791EA0715560EE92BC`.
+- The public release record must show the 13 September 2026 refresh date, build 3, stale-execution recovery, merchant-action restoration, safe Accessibility expiry, fixed recurring auto-float cadence, and the retained product feature list.
